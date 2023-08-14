@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "xcom-mostafa"
+client_id = "2b0f49ff2366cd99c96263ae1eed9817"
+application_url = "https://stars-yarn-horizon-reality.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://stars-yarn-horizon-reality.trycloudflare.com/auth/callback",
+  "https://stars-yarn-horizon-reality.trycloudflare.com/auth/shopify/callback",
+  "https://stars-yarn-horizon-reality.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-ad1d86c0.myshopify.com"
